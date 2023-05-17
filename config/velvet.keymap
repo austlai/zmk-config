@@ -15,7 +15,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        base {
             bindings = <
                 &kp Q           &kp W       &kp E           &kp R       &kp T           &kp Y                   &kp U                   &kp I               &kp O               &kp P
                 &kp A           &kp S       &kp D           &kp F       &kp G           &kp H                   &kp J                   &kp K               &kp L               &kp SEMI
@@ -24,7 +24,7 @@
             >;
         };
 
-        layer_1 {
+        symbols {
             bindings = <
                 &kp N1          &kp N2      &kp N3          &kp N4      &kp N5          &kp N6                  &kp N7                  &kp N8              &kp N9              &kp N0
                 &kp TILDE       &kp GRAVE   &trans          &kp SLASH   &kp ASTERISK    &trans                  &kp LEFT_BRACKET        &kp RIGHT_BRACKET   &trans              &kp BSLH
@@ -33,7 +33,7 @@
             >;
         };
 
-        layer_2 {
+        function {
             bindings = <
                 &kp F1          &kp F2      &kp F3          &kp F4      &kp F5          &trans                  &kp K_PREV              &kp K_NEXT          &kp K_PLAY_PAUSE    &kp BACKSPACE
                 &kp F6          &kp F7      &kp F8          &kp F9      &kp F10         &trans                  &kp DELETE              &kp UP              &kp PRINTSCREEN     &trans
@@ -42,7 +42,7 @@
             >;
         };
 
-        layer_3 {
+        boot {
             bindings = <
                 &bootloader     &none       &none           &none       &bt BT_CLR      &none                   &none                   &none               &none               &bootloader
                 &none           &none       &none           &none       &none           &none                   &bt BT_SEL 0            &bt BT_SEL 1        &bt BT_SEL 2        &none
