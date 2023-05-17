@@ -1,0 +1,11 @@
+file_format: "1"
+id: velvet
+name: velvet
+type: shield
+url: https://github.com/austlai/zmk-config
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - velvet_left
+  - velvet_right
