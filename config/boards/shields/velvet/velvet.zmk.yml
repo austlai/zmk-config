@@ -1,6 +1,6 @@
 file_format: "1"
 id: velvet
-name: velvet
+name: Velvet
 type: shield
 url: https://github.com/austlai/zmk-config
 requires: [seeeduino_xiao_ble]
