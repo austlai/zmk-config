@@ -8,7 +8,7 @@
 
         boot {
             bindings = <&mo 4>;
-            key-positions = <24 25 33 36>
+            key-positions = <24 25 33 36>;
         };
     };
 
