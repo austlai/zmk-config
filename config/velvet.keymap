@@ -10,11 +10,6 @@
             bindings = <&mo 5>;
             key-positions = <24 25 32 35>;
         };
-
-        num_sym {
-            bindings = <&mo 4>;
-            key-positions = <32 35>;
-        };
     };
 
     keymap {
@@ -24,8 +19,8 @@
         base {
             bindings = <
                 &kp Q           &kp W       &kp E           &kp R       &kp T                                   &kp Y                   &kp U                   &kp I               &kp O               &kp P
-                &kp A           &kp S       &kp D           &kp F       &kp G                                   &kp H                   &kp J                   &kp K               &kp L               &kp APOS
-                &kp Z           &kp X       &kp C           &kp V       &kp B                                   &kp N                   &kp M                   &kp COMMA           &kp DOT             &kp SEMI
+                &kp A           &kp S       &kp D           &kp F       &kp G                                   &kp H                   &kp J                   &kp K               &kp L               &kp SEMI
+                &kp Z           &kp X       &kp C           &kp V       &kp B                                   &kp N                   &kp M                   &kp COMMA           &kp DOT             &kp APOS
                                 &kp LCTRL   &kp LEFT_META   &mo 1       &mt LEFT_SHIFT ENTER                    &kp SPACE               &mo 2                   &kp BACKSPACE       &kp SLASH
             >;
         };
@@ -36,7 +31,7 @@
                 &kp ESCAPE      &kp TILDE   &kp GRAVE       &kp SLASH   &kp ASTERISK                            &trans                  &kp LBKT                &kp RBKT            &trans              &trans
                 &kp TAB         &mo 3       &kp MINUS       &kp PLUS    &kp EQUAL                               &kp UNDERSCORE          &kp LBRC                &kp RBRC            &trans              &kp BSLH
                 &kp LEFT_ALT    &kp TAB     &trans          &trans      &trans                                  &trans                  &kp LPAR                &kp RPAR            &trans              &trans
-                                &trans      &trans          &trans      &trans                                  &trans                  &trans                  &trans              &trans
+                                &trans      &trans          &trans      &trans                                  &trans                  &mo 4                   &trans              &trans
             >;
         };
 
@@ -46,7 +41,7 @@
                 &kp F1          &kp F2      &kp F3          &kp F4      &kp F5                                  &trans                  &kp K_PREV              &kp K_NEXT          &kp K_PLAY_PAUSE    &kp BACKSPACE
                 &kp F6          &kp F7      &kp F8          &kp F9      &kp F10                                 &trans                  &kp DELETE              &kp UP              &kp PRINTSCREEN     &trans
                 &trans          &trans      &trans          &kp F11     &kp F12                                 &trans                  &kp LEFT                &kp DOWN            &kp RIGHT           &trans
-                                &trans      &trans          &trans      &trans                                  &trans                  &trans                  &trans              &trans
+                                &trans      &trans          &mo 4       &trans                                  &trans                  &trans                  &trans              &trans
             >;
         };
 
