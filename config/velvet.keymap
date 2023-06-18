@@ -68,10 +68,10 @@
         // 5
         mod_num {
             bindings = <
-                &none           &none       &none           &none       &none                                   &LS(LG(N7))             &LS(LG(N8))             &LS(LG(N9))         &none               &none
-                &trans          &none       &none           &none       &none                                   &LS(LG(N4))             &LS(LG(N5))             &LS(LG(N6))         &none               &none
-                &none           &none       &trans          &trans      &none                                   &LS(LG(N1))             &LS(LG(N2))             &LS(LG(N3))         &none               &none
-                                &trans      &trans          &trans      &none                                   &none                   &LS(LG(N0))                  &none               &none
+                &none           &none       &none           &none       &none                                   &kp LS(LG(N7))          &kp LS(LG(N8))          &kp LS(LG(N9))      &none               &none
+                &trans          &none       &none           &none       &none                                   &kp LS(LG(N4))          &kp LS(LG(N5))          &kp LS(LG(N6))      &none               &none
+                &none           &none       &trans          &trans      &none                                   &kp LS(LG(N1))          &kp LS(LG(N2))          &kp LS(LG(N3))      &none               &none
+                                &trans      &trans          &trans      &none                                   &none                   &kp LS(LG(N0))          &none               &none
             >;
         };
 
