@@ -16,7 +16,7 @@
 / {
     behaviors {
         sftent: shift_enter {
-            compatibe = "zmk, behaviour-mod-morph";
+            compatibe = "zmk, behavior-mod-morph";
             label = "SHIFT_ENTER";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp ENTER>;
