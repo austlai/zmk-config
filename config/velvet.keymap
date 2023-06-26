@@ -18,7 +18,7 @@
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp ENTER>;
             mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>
+            keep-mods = <(MOD_LSFT)>;
         };
     };
 
