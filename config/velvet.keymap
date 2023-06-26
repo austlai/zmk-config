@@ -2,16 +2,18 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+
 / {
     combos {
         compatible = "zmk,combos";
-
         boot {
             bindings = <&mo 6>;
             key-positions = <24 25 32 35>;
         };
     };
+};
 
+/ {
     behaviors {
         sftent: shift_enter {
             compatibe = "zmk, behaviour-mod-morph";
@@ -22,7 +24,9 @@
             keep-mods = <(MOD_LSFT)>;
         };
     };
+};
 
+/ {
     keymap {
         compatible = "zmk,keymap";
 
