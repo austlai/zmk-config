@@ -1,0 +1,16 @@
+if SHIELD_BANANA_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "banana"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_BANANA_LEFT
+
+if SHIELD_BANANA_LEFT || SHIELD_BANANA_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_BANANA_LEFT || SHIELD_BANANA_RIGHT
