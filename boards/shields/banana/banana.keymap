@@ -38,6 +38,6 @@
         extras {
             display-name = "extras";
             status = "reserved";
-        }
+        };
     };
 };
