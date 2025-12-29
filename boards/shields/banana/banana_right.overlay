@@ -6,7 +6,7 @@
 
 &default_transform {
     // Set this to the number of columns on the left side.
-    col-offset = <2>;
+    col-offset = <6>;
 };
 
 &kscan {
@@ -18,5 +18,6 @@
         , <&xiao_d 2 GPIO_ACTIVE_HIGH>
         , <&xiao_d 3 GPIO_ACTIVE_HIGH>  
         , <&xiao_d 4 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 5 GPIO_ACTIVE_HIGH>
         ;
 };
