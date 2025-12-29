@@ -21,7 +21,7 @@
 include:
   - board: xiao_ble
     shield: banana_left
-    snippet: 
+    snippets:
       - studio-rpc-usb-uart
       - zmk-usb-logging
     cmake-args: -DCONFIG_ZMK_STUDIO=y
