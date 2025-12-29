@@ -21,7 +21,7 @@
 include:
   - board: xiao_ble
     shield: banana_left
-    snippets: zmk-usb-logging
+    snippet: zmk-usb-logging
   - board: xiao_ble
     shield: banana_right
     snippet: zmk-usb-logging
