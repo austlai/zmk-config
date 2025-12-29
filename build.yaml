@@ -1,10 +1,10 @@
 include:
   - board: xiao_ble
     shield: banana_left
-    snippet: zmk-usb-logging
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: xiao_ble
     shield: banana_right
-    snippet: zmk-usb-logging
   - board: xiao_ble
     shield: tester_xiao 
   - board: xiao_ble
