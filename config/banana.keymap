@@ -21,7 +21,7 @@
                 &kp GRAVE &kp TILDE &trans    &kp FSLH &kp ASTERISK &trans   &trans    &kp LBKT &kp RBKT &trans &trans &trans
                 &kp TAB   &kp LALT  &kp MINUS &kp PLUS &kp EQUAL    &trans   &kp UNDER &kp LBRC &kp RBRC &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans                    &trans    &kp LPAR &kp RPAR &trans &trans &trans
-                                     &trans &mo 3 &kp LS(ENT)                &trans &trans &trans 
+                                     &trans &mo 3 &kp LS(ENTER)                &trans &trans &trans 
             >;
         };
 
