@@ -36,4 +36,9 @@ include:
     shield: banana_right
 
   - board: seeeduino_xiao_ble
+    shield: banana_right
+    snippet: zmk-usb-logging
+    artifact-name: banana_right_with_usb_logging
+
+  - board: seeeduino_xiao_ble
     shield: settings_reset
