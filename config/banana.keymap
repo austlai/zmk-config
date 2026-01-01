@@ -8,10 +8,60 @@
         default_layer {
             display-name = "Base";
             bindings = <
-                &studio_unlock &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L
-                &kp M &kp N &kp O &kp P &kp Q &kp R &kp S &kp T &kp U &kp V &kp W &kp X
-                &kp Y &kp Z &kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J
-                &kp K &kp L &kp M &kp N &kp O &kp P
+                &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I     &kp O   &kp P       &kp BSPC
+                &kp TAB   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K     &kp L   &kp SEMI    &kp BSLH
+                &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &kp FSLH    &kp SQT
+                        &kp LGUI &mo 2 &kp &mt LSHIFT ENTER &kp SPACE &kp mo 1  &kp RALT
+            >;
+        };
+
+        symbols {
+            display-name = "Symbols";
+            bindings = <
+                &kp GRAVE &kp TILDE &trans    &kp FSLH &kp ASTERISK &trans   &trans    &kp LBKT &kp RBKT &trans &trans &trans
+                &kp TAB   &kp LALT  &kp MINUS &kp PLUS &kp EQUAL    &trans   &kp UNDER &kp LBRC &kp RBRC &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans                    &trans    &kp LPAR &kp RPAR &trans &trans &trans
+                                     &trans &mo 3 &kp LS(ENT)                &trans &trans &trans 
+            >;
+        };
+
+        numbers {
+            display-name = "Numbers";
+            bindings = <
+                &trans &trans &kp DEL  &kp UP   &kp PSCRN &trans   &kp N7 &kp N8 &kp N9 &trans &trans &trans
+                &trans &trans &kp LEFT &kp DOWN &kp RIGHT &trans   &kp N4 &kp N5 &kp N6 &trans &trans &trans
+                &trans &trans &trans   &trans   &trans    &trans   &kp N1 &kp N2 &kp N3 &trans &trans &trans
+                                       &trans   &trans    &trans   &trans &mo 3 &kp N0
+            >;
+        };
+
+        functions {
+            display-name = "Functions";
+            bindings = <
+                &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &trans
+                &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
+                &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6   &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
+                                     &trans &trans &trans   &trans &trans &trans
+            >;
+        };
+
+        reserved_1 {
+            display-name = "Reserved 1";
+            bindings = <
+                &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
+                                     &trans &trans &trans   &trans &trans &trans
+            >;
+        };
+
+        reserved_2 {
+            display-name = "Reserved 2";
+            bindings = <
+                &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
+                                     &trans &trans &trans   &trans &trans &trans
             >;
         };
     };
