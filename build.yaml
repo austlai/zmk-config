@@ -1,11 +1,12 @@
 include:
   - board: nice_nano@2
     shield: banana_dongle dongle_display
-    snippet: studio-rpc-usb-uart zmk-usb-logging
+    snippet: zmk-usb-logging
     artifact-name: banana_dongle
   
   - board: seeeduino_xiao_ble
     shield: banana_left
+    snippet: zmk-usb-logging
     artifact-name: banana_left
 
   - board: seeeduino_xiao_ble
