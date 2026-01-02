@@ -1,8 +1,25 @@
 #include "banana-layouts.dtsi"
-#include <dt-bindings/zmk/matrix_transform.h>
 
 / {
-    matrix_transform0: matrix_transform0 {
+    chosen {
+        zmk,kscan = &default_kscan;
+        zmk,physical-layout = &default_layout;
+    };
+
+    default_kscan: kscan0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;
+
+        row-gpios
+            = <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
+    };
+
+    default_transform: matrix_transform0 {
         compatible = "zmk,matrix-transform";
         columns = <12>;
         rows = <4>;
@@ -15,6 +32,6 @@
     };
 };
 
-&physical_layout_banana {
-    transform = <&matrix_transform0>;
+&default_layout {
+    transform = <&default_transform>;
 };

@@ -1,7 +1,7 @@
 #include <physical_layouts.dtsi>
 
 / {
-    physical_layout_banana: physical_layout_banana {
+    default_layout: physical_layout0 {
         compatible = "zmk,physical-layout";
         display-name = "banana";
         keys  //                     w   h    x    y     rot    rx    ry
