@@ -1,6 +1,6 @@
 include:
   - board: nice_nano@2
-    shield: banana_dongle
+    shield: banana_dongle dongle_display
     snippet: studio-rpc-usb-uart
     artifact-name: banana_dongle
   
