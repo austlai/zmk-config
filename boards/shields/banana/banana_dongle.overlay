@@ -2,14 +2,14 @@
 
 #include "banana-layouts.dtsi"
 
-&physical_layout0 {
+&default_layout {
     transform = <&default_transform>;
 }
 
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,physical-layout = &physical_layout0;
+        zmk,physical-layout = &default_layout;
         zephyr,display = &oled;
     };
 
