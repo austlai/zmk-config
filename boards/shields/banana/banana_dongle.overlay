@@ -4,7 +4,7 @@
 
 &default_layout {
     transform = <&default_transform>;
-}
+};
 
 / {
     chosen {
