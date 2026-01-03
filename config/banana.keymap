@@ -8,7 +8,7 @@
         default_layer {
             display-name = "Base";
             bindings = <
-                &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I     &kp O   &kp P       &kp BSPC
+                &ext_power EP_ON &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I     &kp O   &kp P       &kp BSPC
                 &kp TAB   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K     &kp L   &kp SEMI    &kp BSLH
                 &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &kp FSLH    &kp SQT
                         &kp LGUI &mo 2 &mt LSHIFT ENTER &kp SPACE &mo 1  &kp RALT
