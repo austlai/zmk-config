@@ -2,14 +2,42 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+&mt {
+    tapping-term-ms = <120>;
+    flavor = "balanced";
+    quick-tap-ms = <200>;
+};
+
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        combo_boot_dongle {
+            timeout-ms = <50>;
+            key-positions = <0 5 38 6 11 41>;
+            bindings = <&bootloader>;
+        };
+
+        combo_boot_left {
+            timeout-ms = <50>;
+            key-positions = <0 5 38>;
+            bindings = <&sl 5>;
+        };
+
+        combo_boot_right {
+            timeout-ms = <50>;
+            key-positions = <6 11 41>;
+            bindings = <&sl 5>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             display-name = "Base";
             bindings = <
-                &ext_power EP_ON &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I     &kp O   &kp P       &kp BSPC
+                &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I     &kp O   &kp P       &kp BSPC
                 &kp TAB   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K     &kp L   &kp SEMI    &kp BSLH
                 &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &kp FSLH    &kp SQT
                         &kp LGUI &mo 2 &mt LSHIFT ENTER &kp SPACE &mo 1  &kp RALT
@@ -46,8 +74,8 @@
             >;
         };
 
-        reserved_1 {
-            display-name = "Reserved 1";
+        blank {
+            display-name = "Blank";
             bindings = <
                 &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
@@ -56,10 +84,10 @@
             >;
         };
 
-        reserved_2 {
-            display-name = "Reserved 2";
+        boot {
+            display-name = "Boot";
             bindings = <
-                &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
+                &trans &bootloader &trans &trans &trans &trans   &trans &trans &trans &trans &bootloader &trans
                 &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
                                      &trans &trans &trans   &trans &trans &trans
