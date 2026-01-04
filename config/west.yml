@@ -11,6 +11,6 @@ manifest:
       revision: v0.3
     - name: zmk-dongle-display
       remote: austlai
-      revision: 20ce47e
+      revision: e014344
   self:
     path: config
