@@ -14,7 +14,7 @@
 
         combo_boot_dongle {
             timeout-ms = <50>;
-            key-positions = <0 5 38 6 11 41>;
+            key-positions = <0 5 38 6 11 39>;
             bindings = <&bootloader>;
         };
 
@@ -26,7 +26,7 @@
 
         combo_boot_right {
             timeout-ms = <50>;
-            key-positions = <6 11 41>;
+            key-positions = <6 11 39>;
             bindings = <&sl 5>;
         };
     };
